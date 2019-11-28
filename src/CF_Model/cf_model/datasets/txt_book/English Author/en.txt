@@ -1,0 +1,10 @@
+ Numerical summaries of the data, such as the sample mean,
+standard deviation, percentiles, and autocorrelations, should also be computed
+and evaluated. Chapter 2 will provide the necessary background to
+do this. If potential predictor variables are available, scatter plots of each
+pair of variables should be examined. Unusual data points or potential
+outliers should be identified and flagged for possible further study. The
+purpose of this preliminary data analysis is to obtain some “feel” for the
+data, and a sense of how strong the underlying patterns such as trend and
+seasonality are. This information will usually suggest the initial types of
+quantitative forecasting methods and models to explore.

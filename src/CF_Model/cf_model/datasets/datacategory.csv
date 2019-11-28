@@ -1,0 +1,5 @@
+category,filenames
+Christian Author,['xt_1.txt']
+English Author,"['a.txt', 'en.txt']"
+Muslim Author,['mu.txt']
+Traditional Author,['tr.txt']
