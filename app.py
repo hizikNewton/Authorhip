@@ -29,4 +29,4 @@ def analyse():
         return render_template('index.html',final_time = final_time,received_text = received_text,predictions = predictions,accuracy = accuracy,dfv= dfv)
     
 if __name__ == '__main__':
-	app.run(debug=True)
+	app.run(threaded=True, port=5000)
