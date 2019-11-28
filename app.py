@@ -1,6 +1,7 @@
 from flask import Flask, render_template,request,url_for
 from flask_bootstrap import Bootstrap
 from CF_Model.tests import test_predict
+import os
 
 # NLP Packages
 from textblob import TextBlob
@@ -29,4 +30,5 @@ def analyse():
         return render_template('index.html',final_time = final_time,received_text = received_text,predictions = predictions,accuracy = accuracy,dfv= dfv)
     
 if __name__ == '__main__':
-	app.run(threaded=True, port=5000)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)
