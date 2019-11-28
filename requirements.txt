@@ -13,8 +13,6 @@ soupsieve==1.9.5
 sqlparse==0.3.0
 beautifulsoup4==4.8.1
 blinker==1.4
-# Editable Git install with no remote (CF-Model===-version-.-.-1.0.0-)
--e c:\users\bamidele\dev\authorship\src
 Click==7.0
 Django==2.2.4
 dominate==2.4.0
