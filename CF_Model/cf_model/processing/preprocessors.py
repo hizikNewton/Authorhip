@@ -1,8 +1,6 @@
 import numpy as np
 import string,re
-from bs4 import BeautifulSoup
 from sklearn.base import BaseEstimator, TransformerMixin
-from nltk.tokenize import word_tokenize
 import pandas as pd
 
 
@@ -19,13 +17,8 @@ class DeNoise(BaseEstimator, TransformerMixin):
         return self
 
     def transform(self,X):
-        #strip_html
-        #X = BeautifulSoup(X[0], "html.parser")
-        #remove_between_square_brackets
         if(isinstance(X,str)):
            X = re.sub('\[[^]]*\]', '', X)
-        #elif(isinstance(X,numpy.ndarray)):
-            #X.apply(lambda x:re.sub('\[[^]]*\]', '', str(x)) )
         else:
             X = [re.sub('\[[^]]*\]', '', i) for i in X]
         return X
@@ -39,9 +32,9 @@ class Tokenize(BaseEstimator, TransformerMixin):
         #X = self.text.copy()
         
         if(isinstance(X,str)):
-            tokens= word_tokenize(X)
+            tokens=X.split()
         else:
-            tokens = [word_tokenize(i) for i in X ]
+            tokens = [i.split() for i in X ]
         return tokens
 
 class Normalize(BaseEstimator, TransformerMixin):
