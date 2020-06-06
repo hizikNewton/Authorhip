@@ -1,5 +1,5 @@
 beautifulsoup4==4.8.1
-Django==2.2.4
+Django==2.2.13
 joblib==0.13.2
 nltk==3.4.4
 numpy==1.17.0
@@ -14,7 +14,7 @@ sqlparse==0.3.0
 beautifulsoup4==4.8.1
 blinker==1.4
 Click==7.0
-Django==2.2.4
+Django==2.2.13
 dominate==2.4.0
 Flask==1.1.1
 Flask-Bootstrap==3.3.7.1
